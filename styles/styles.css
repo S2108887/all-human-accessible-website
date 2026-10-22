@@ -1,3 +1,38 @@
+html {
+    --tekstkleur: light-dark(#6b5238, #fff);
+    --achtergrondkleur: light-dark(#fff,#6b5238);
+
+    --tekstkleur2: light-dark(#418181, #afd4d4);
+
+    --accentkleur1: light-dark(#54a654, #99cc99);
+    --accentkleur2: light-dark(#b58a38, #caa153 );
+
+    color: var(--tekstkleur);
+    background-color: var(--achtergrondkleur);
+}
+
+.kleurtest1 {
+    background-color: var(--accentkleur1);
+    height: 1rem;
+}
+
+.kleurtest2 {
+    background-color: var(--accentkleur2);
+    height: 1rem;
+}
+
+p, a {
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+
+a {
+    border: 2px solid transparent;
+    color: var(--tekstkleur2);
+}
+
+
+
 nav.skiplinks {
     width: 100svw;
     height: 0;
@@ -15,12 +50,11 @@ nav.skiplinks {
     }
 }
 
-a {
-    border: 2px solid transparent;
-}
+
 
 a:focus {
-    border: 2px solid red;
+    border: 2px solid var(--tekstkleur2);
+    outline: none;
 }
 
 nav {
