@@ -1,0 +1,30 @@
+nav.skiplinks {
+    width: 100svw;
+    height: 0;
+
+    overflow: clip;
+    position: fixed;
+
+    top: 1rem;
+
+    display: grid;
+    justify-items: center;
+
+    &:has(a:focus) {
+        height: unset;
+    }
+}
+
+a {
+    border: 2px solid transparent;
+}
+
+a:focus {
+    border: 2px solid red;
+}
+
+nav {
+    li {
+        list-style-type: "";
+    }
+}
