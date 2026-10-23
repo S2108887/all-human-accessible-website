@@ -50,6 +50,14 @@ nav.skiplinks {
     }
 }
 
+nav.hoofdnavigatie {
+    --icoon-kleur: var(--tekstkleur2);
+    svg {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
 
 
 a:focus {

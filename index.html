@@ -14,11 +14,18 @@
         <a href="#hoofdinhoud">Naar hoofdinhoud</a>
     </nav>
     
-    <nav>
+    <nav class="hoofdnavigatie">
         <!-- Niet meer links achter elkaar, maar links in een ul, want
-         de schermlezer leest dan voor hoeveel het er zijn.-->
+                 de schermlezer leest dan voor hoeveel het er zijn.-->
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="index.html">
+                    <span>Home</span>
+                    <svg role="presentation" viewBox="0 0 64 64">
+                        <use href="assets/iconen.svg#huis"></use>
+                    </svg>
+                </a>
+            </li>
             <li><a href="verkennen.html">Verkennen</a></li>
             <li><a href="nieuws.html">Nieuws</a></li>
             <li><a href="collectie.html">Collectie</a></li>
