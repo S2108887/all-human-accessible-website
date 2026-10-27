@@ -1,11 +1,11 @@
 html {
     --tekstkleur: light-dark(#6b5238, #fff);
-    --achtergrondkleur: light-dark(#fff,#6b5238);
+    --achtergrondkleur: light-dark(#fff, #6b5238);
 
     --tekstkleur2: light-dark(#418181, #afd4d4);
 
     --accentkleur1: light-dark(#54a654, #99cc99);
-    --accentkleur2: light-dark(#b58a38, #caa153 );
+    --accentkleur2: light-dark(#b58a38, #caa153);
 
     color: var(--tekstkleur);
     background-color: var(--achtergrondkleur);
@@ -21,9 +21,10 @@ html {
     height: 1rem;
 }
 
-p, a {
+p,
+a {
     line-height: 1.4;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 a {
@@ -31,6 +32,34 @@ a {
     color: var(--tekstkleur2);
 }
 
+a:focus {
+    border: 2px solid var(--tekstkleur2);
+    outline: none;
+}
+
+nav {
+    li {
+        list-style-type: "";
+    }
+}
+
+body {
+    display: grid;
+    grid-template-rows: [main] 1fr min-content [nav];
+    grid-template-columns: [nav main] 1fr;
+
+    @media (min-width: 32rem) {
+        grid-template-rows: [nav main] 1fr;
+        grid-template-columns: [nav] min-content [main] 1fr;
+    }
+
+    width: 100svw;
+    height: 100svh;
+
+    margin: 0;
+
+    gap: 1rem;
+}
 
 
 nav.skiplinks {
@@ -51,22 +80,39 @@ nav.skiplinks {
 }
 
 nav.hoofdnavigatie {
-    --icoon-kleur: var(--tekstkleur2);
+    grid-column: nav / span 1;
+    grid-row: nav / span 1;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+
+        @media (min-width: 32rem) {
+            flex-direction: column;
+        }
+
+        margin: 0;
+        padding: 0;
+    }
+
+    ul a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     svg {
+        --icoon-kleur: var(--tekstkleur2);
         width: 2rem;
         height: 2rem;
+
+        order: -1;
     }
 }
 
-
-
-a:focus {
-    border: 2px solid var(--tekstkleur2);
-    outline: none;
+main {
+    grid-column: main / span 1;
+    grid-row: main / span 1;
 }
 
-nav {
-    li {
-        list-style-type: "";
-    }
-}
