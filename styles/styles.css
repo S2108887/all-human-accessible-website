@@ -25,6 +25,18 @@ html {
 
     color: var(--tekstkleur);
     background-color: var(--achtergrondkleur);
+
+    @media (prefers-contrast: more) {
+        --tekstkleur: light-dark(black, white);
+        --achtergrondkleur: light-dark(white, dark);
+
+        --achtergrondkleur-donkerder: var(--achtergrondkleur);
+
+        --tekstkleur2: light-dark(black, white);
+
+        --accentkleur1: light-dark(black, white);
+        --accentkleur2: light-dark(black, white);
+    }
 }
 
 .kleurtest1 {
@@ -102,9 +114,14 @@ nav.skiplinks {
 }
 
 nav.hoofdnavigatie {
-    box-shadow: 0 0 0.5rem black;
     grid-column: nav / span 1;
     grid-row: nav / span 1;
+
+    box-shadow: 0 0 0.5rem black;
+
+    @media (prefers-contrast: more) {
+        box-shadow: 2px 0 0 var(--tekstkleur);
+    }
 
     padding: 0.5rem;
 
@@ -122,15 +139,15 @@ nav.hoofdnavigatie {
         padding: 0;
     }
 
-        a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    
-            @media (prefers-color-scheme: light) {
-                color: var(--tekstkleur);
-            }
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (prefers-color-scheme: light) {
+            color: var(--tekstkleur);
         }
+    }
 
 
 
@@ -142,7 +159,7 @@ nav.hoofdnavigatie {
         order: -1;
 
         @media (prefers-color-scheme: light) {
-                --icoon-kleur: var(--tekstkleur);
+            --icoon-kleur: var(--tekstkleur);
         }
     }
 }
@@ -155,4 +172,3 @@ main {
 h1 {
     text-align: center;
 }
-
