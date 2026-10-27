@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Alegreya";
+    font-style: normal;
+    src: url(../assets/fonts/Alegreya-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Alegreya";
+    font-style: italic;
+    src: url(../assets/fonts/Alegreya-Italic.ttf);
+}
+
 html {
     --tekstkleur: light-dark(#6b5238, #fff);
     --achtergrondkleur: light-dark(#fff, #6b5238);
@@ -6,6 +18,8 @@ html {
 
     --accentkleur1: light-dark(#54a654, #99cc99);
     --accentkleur2: light-dark(#b58a38, #caa153);
+
+    font-family: "Alegreya";
 
     color: var(--tekstkleur);
     background-color: var(--achtergrondkleur);
@@ -24,7 +38,7 @@ html {
 p,
 a {
     line-height: 1.4;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 a {
@@ -80,6 +94,7 @@ nav.skiplinks {
 }
 
 nav.hoofdnavigatie {
+    padding: 0.5rem;
     grid-column: nav / span 1;
     grid-row: nav / span 1;
 
