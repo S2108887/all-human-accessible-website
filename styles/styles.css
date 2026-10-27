@@ -102,7 +102,7 @@ nav.skiplinks {
 }
 
 nav.hoofdnavigatie {
-    box-shadow: 0rem 0 0.5rem black;
+    box-shadow: 0 0 0.5rem black;
     grid-column: nav / span 1;
     grid-row: nav / span 1;
 
@@ -110,8 +110,9 @@ nav.hoofdnavigatie {
 
     ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         gap: 0.5rem;
+        flex-wrap: wrap;
 
         @media (min-width: 32rem) {
             flex-direction: column;
