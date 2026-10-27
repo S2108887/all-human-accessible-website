@@ -14,6 +14,8 @@ html {
     --tekstkleur: light-dark(#6b5238, #fff);
     --achtergrondkleur: light-dark(#fff, #6b5238);
 
+    --achtergrondkleur-donkerder: color-mix(in oklch, var(--achtergrondkleur), black 10%);
+
     --tekstkleur2: light-dark(#418181, #afd4d4);
 
     --accentkleur1: light-dark(#54a654, #99cc99);
@@ -55,6 +57,8 @@ nav {
     li {
         list-style-type: "";
     }
+
+    background-color: var(--achtergrondkleur-donkerder);
 }
 
 body {
@@ -91,12 +95,18 @@ nav.skiplinks {
     &:has(a:focus) {
         height: unset;
     }
+
+    a {
+        background-color: var(--achtergrondkleur);
+    }
 }
 
 nav.hoofdnavigatie {
-    padding: 0.5rem;
+    box-shadow: 0rem 0 0.5rem black;
     grid-column: nav / span 1;
     grid-row: nav / span 1;
+
+    padding: 0.5rem;
 
     ul {
         display: flex;
@@ -111,11 +121,17 @@ nav.hoofdnavigatie {
         padding: 0;
     }
 
-    ul a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            @media (prefers-color-scheme: light) {
+                color: var(--tekstkleur);
+            }
+        }
+
+
 
     svg {
         --icoon-kleur: var(--tekstkleur2);
@@ -123,11 +139,19 @@ nav.hoofdnavigatie {
         height: 2rem;
 
         order: -1;
+
+        @media (prefers-color-scheme: light) {
+                --icoon-kleur: var(--tekstkleur);
+        }
     }
 }
 
 main {
     grid-column: main / span 1;
     grid-row: main / span 1;
+}
+
+h1 {
+    text-align: center;
 }
 
