@@ -69,8 +69,6 @@ nav {
     li {
         list-style-type: "";
     }
-
-    background-color: var(--achtergrondkleur-donkerder);
 }
 
 body {
@@ -110,6 +108,7 @@ nav.skiplinks {
 
     a {
         background-color: var(--achtergrondkleur);
+        padding: 1rem;
     }
 }
 
@@ -118,6 +117,8 @@ nav.hoofdnavigatie {
     grid-row: nav / span 1;
 
     box-shadow: 0 0 0.5rem black;
+
+    background-color: var(--achtergrondkleur-donkerder);
 
     @media (prefers-contrast: more) {
         box-shadow: 2px 0 0 var(--tekstkleur);
