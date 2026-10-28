@@ -150,8 +150,6 @@ nav.hoofdnavigatie {
         }
     }
 
-
-
     svg {
         --icoon-kleur: var(--tekstkleur2);
         width: 2rem;
@@ -168,6 +166,9 @@ nav.hoofdnavigatie {
 main {
     grid-column: main / span 1;
     grid-row: main / span 1;
+
+    overflow-y: auto;
+    padding: 1rem 1rem 1rem 0;
 }
 
 h1 {
