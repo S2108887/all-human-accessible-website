@@ -28,7 +28,7 @@ html {
 
     @media (prefers-contrast: more) {
         --tekstkleur: light-dark(black, white);
-        --achtergrondkleur: light-dark(white, dark);
+        --achtergrondkleur: light-dark(white, black);
 
         --achtergrondkleur-donkerder: var(--achtergrondkleur);
 
@@ -228,6 +228,10 @@ h1 {
         justify-self: center;
         padding: 0.25rem;
         color: light-dark(black, white);
+        
+        @media (prefers-contrast: more) {
+            background-color: var(--achtergrondkleur);    
+        }
     }
 
     a {
@@ -245,6 +249,11 @@ h1 {
             color-mix(light-dark(white, black), transparent 30%) 0 2rem, 
             color-mix(light-dark(white, black), transparent 100%) 3rem 100%
         );
+
+        @media (prefers-contrast: more) {
+            background-image: none;
+        }
+
         z-index: 1;
         content: "";
         border-radius: 0.5rem;
