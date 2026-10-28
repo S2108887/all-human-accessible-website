@@ -190,28 +190,46 @@ h1 {
     display: grid;
     position: relative;
 
-    grid-template-rows: [afbeelding] 15rem [link] 2rem;
+    grid-template-rows: [afbeelding] 14rem [link] 2rem;
     gap: 0.5rem;
 
-    & > * {
+    & > *, &::after {
         grid-column: 1 / span 1;
     }
 
-    h3, img {
+    h3, img, &::after {
         grid-row: afbeelding / span 1;
     }
 
     img {
-        height: 15rem;
+        height: 14rem;
+        border-radius: 0.5rem;
     }
 
     h3 {
-        z-index: 1;
+        z-index: 2;
+        position: absolute;
+        bottom: 0rem;
+        margin: 0;
+        justify-self: center;
+        padding: 0.25rem;
+        color: light-dark(black, white);
     }
 
     a {
         display: block;
         grid-row: link / span 1;
+    }
+
+    &::after {
+        place-self: stretch;
+        background-image: linear-gradient(
+            0deg in oklch, 
+            color-mix(light-dark(white, black), transparent 30%) 0 2rem, 
+            color-mix(light-dark(white, black), transparent 100%) 3rem 100%
+        );
+        z-index: 1;
+        content: "";
     }
 
 
