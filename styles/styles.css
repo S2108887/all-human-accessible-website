@@ -16,7 +16,7 @@ html {
 
     --achtergrondkleur-donkerder: color-mix(in oklch, var(--achtergrondkleur), black 10%);
 
-    --tekstkleur2: light-dark(#418181, #afd4d4);
+    --tekstkleur2: light-dark(#3f7d7d, #afd4d4);
 
     --accentkleur1: light-dark(#54a654, #99cc99);
     --accentkleur2: light-dark(#b58a38, #caa153);
