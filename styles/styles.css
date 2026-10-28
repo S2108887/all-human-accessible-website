@@ -191,8 +191,7 @@ h1 {
     display: grid;
     position: relative;
 
-    grid-template-rows: [afbeelding] 14rem [link] 2rem;
-    gap: 0.5rem;
+    grid-template-rows: [afbeelding] 14rem [link] min-content;
 
     & > *, &::after {
         grid-column: 1 / span 1;
@@ -220,6 +219,8 @@ h1 {
     a {
         display: block;
         grid-row: link / span 1;
+        justify-self: center;
+        padding: 0.5rem;
     }
 
     &::after {
@@ -231,9 +232,6 @@ h1 {
         );
         z-index: 1;
         content: "";
+        border-radius: 0.5rem;
     }
-
-
-
-
 }
