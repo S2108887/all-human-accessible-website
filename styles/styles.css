@@ -274,6 +274,8 @@ form.verkenmode {
             flex-direction: column;
             gap: 0.25rem;
         }
+
+        --icoon-kleur: var(--tekstkleur);
     }
 }
 
