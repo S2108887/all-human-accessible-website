@@ -12,12 +12,32 @@ De instructie van deze leertaak staat in [WIKI](https://github.com/fdnd-task/all
   * [Licentie](#licentie)
 
 ## Beschrijving
-
 Deze readme is nog helemaal niet af. 
 
-Hier is een link naar de webpagina.
+[Link naar de webpagina](https://edu.nl/vmpun).
 
-<img src="assets/qr-webpagina.svg">
+<img src="assets/qr-webpagina.svg" width="300">
+
+### Kleurenschema's 
+Er worden vier nieuwe kleurenschema's gebruikt. Er zijn schema's voor lichte-modus, donkere modus, 
+lichte modus hoog contrast en donkere modus hoog contrast. 
+
+<img src="assets/screenshots/donker.png" width="300">
+ 
+ *Donker schema*
+
+ <img src="assets/screenshots/licht.png" width="300">
+ 
+ *Licht schema*
+
+ <img src="assets/screenshots/donker-hoog-contrast.png" width="300">
+ 
+ *Donker hoog contrast*
+
+ <img src="assets/screenshots/licht-hoog-contrast.png" width="300">
+ 
+ *licht hoog contrast*
+
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
