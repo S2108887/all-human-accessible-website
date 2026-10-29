@@ -200,7 +200,10 @@ nav.hoofdnavigatie {
     background-color: var(--achtergrondkleur-donkerder);
 
     @media (prefers-contrast: more) {
-        box-shadow: 2px 0 0 var(--tekstkleur);
+        box-shadow: 0 -2px 0 var(--tekstkleur);
+        @media (min-width: 32rem) {
+            box-shadow: 2px 0 0 var(--tekstkleur);
+        }
     }
 
     padding: 0.5rem;
