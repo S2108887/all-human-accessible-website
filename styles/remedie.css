@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-img {
+img, svg {
     display: block;
     max-width: 100%;
 }
