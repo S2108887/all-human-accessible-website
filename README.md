@@ -12,6 +12,13 @@ De instructie van deze leertaak staat in [WIKI](https://github.com/fdnd-task/all
   * [Licentie](#licentie)
 
 ## Beschrijving
+
+Deze readme is nog helemaal niet af. 
+
+Hier is een link naar de webpagina.
+
+<img src="assets/qr-webpagina.svg">
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
