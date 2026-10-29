@@ -135,7 +135,6 @@ nav.hoofdnavigatie {
     ul {
         display: flex;
         justify-content: space-evenly;
-        gap: 0.5rem;
         flex-wrap: wrap;
 
         @media (min-width: 32rem) {
