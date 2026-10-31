@@ -68,6 +68,18 @@ Deze methode heet [Strips/Highlight in het smasing-magazine-artikel](https://www
 
 *Tekst bovenop afbeelding: licht hoog contrast*
 
+### Overige toegankelijkheids-eigenschappen
+Alle interactieve elementen hebben een hover-opmaak en deze is gelijk aan de focus-opmaak.
+
+In het begin van een pagina staat een skip-link waarmee je de navigatie kan overslaan. De link
+wordt pas zichtbaar wanneer je na het laden van de pagina de tab-toets gebruikt.
+
+Alle animaties worden uitgeschakeld als een gebruiker op diens computer opgeeft dat beweging beperkt moet worden
+(en de computer deze instelling doorgeeft aan de webbrowser). Dit is nuttig voor gebruikers die
+misselijk worden van bewegende elementen. Momenteel zijn de animaties als volgt
+* De radioknoppen hebben een animatie van een groeiende bloem
+* De omkadering van interactieve elementen heeft een fade-in- en een fade-out-effect.
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
