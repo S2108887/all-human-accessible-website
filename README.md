@@ -4,6 +4,8 @@ Ontwerp en maak voor een opdrachtgever een website toegankelijk volgens WCAG ric
 
 De instructie van deze leertaak staat in [WIKI](https://github.com/fdnd-task/all-human-accessible-website/wiki)
 
+De [Kenmerken-sectie](#kenmerken) van de readme is nog niet zo uitgebreid.
+
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
@@ -12,8 +14,6 @@ De instructie van deze leertaak staat in [WIKI](https://github.com/fdnd-task/all
   * [Licentie](#licentie)
 
 ## Beschrijving
-Deze readme is nog helemaal niet af. 
-
 [Link naar de webpagina](https://edu.nl/vmpun).
 
 <img src="assets/qr-webpagina.svg" width="300">
@@ -80,15 +80,41 @@ misselijk worden van bewegende elementen. Momenteel zijn de animaties als volgt
 * De radioknoppen hebben een animatie van een groeiende bloem
 * De omkadering van interactieve elementen heeft een fade-in- en een fade-out-effect.
 
+De website is te gebruiken via een schermlezer. De voorleestekst van drie plantenafbeeldingen moet echter
+nog bepaald worden.
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
+Het instellen van licht-thema-kleuren en donker-thema-kleuren gaat via de 
+[light-dark-CSS-functie](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/light-dark).
+
+Via een CSS-media-query is hoog-contrast-opmaak ingesteld.
+```
+@media (prefers-contrast: more) {
+  ...
+}
+```
+Zie [MDN over media feature prefers-contrast](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-contrast).
+
+CSS-instellingen om animaties te activeren, worden alleen gebruikt als de media feature 
+`prefers-reduced-motion` de waarde `no-preference` heeft.
+```
+@media (prefers-reduced-motion: no-preference) {
+  ...
+}
+```
+Zie [MDN over media feature prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion)
+
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
 ## Bronnen
 * [Smashing-magazine-artikel over tekst bovenop een afbeelding](https://www.smashingmagazine.com/2023/08/designing-accessible-text-over-images-part1/)
+* [light-dark-CSS-functie](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/light-dark)
+* [Media feature prefers-contrast](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-contrast)
+* [Media feature prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion)
 
 ## Licentie
 This project is licensed under the terms of the [MIT license](./LICENSE).
