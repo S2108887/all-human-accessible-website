@@ -57,26 +57,35 @@
         <h1>Verkennen</h1>
 
         <form class="verkenmode">
-            <label>
-                <span>
-                    <svg role="presentation" viewBox="0 0 64 64">
-                        <use href="assets/iconen.svg#lijst"></use>
-                    </svg>
-                    <span>Lijst</span>
-                </span>
-                <input type="radio" name="verkenmode" checked>
-            </label>
-
-            <label>
-                <span>
-                    <svg role="presentation" viewBox="0 0 64 64">
-                        <use href="assets/iconen.svg#kaart"></use>
-                    </svg>
-                    <span>Kaart</span>
-                </span>
-                <input type="radio" name="verkenmode">
-            </label>
-
+            <p class="schermlezer">
+                Kies voor lijstweergave of plattegrond-weergave. Voor schermlezers is de
+                lijstweergave waarschijnlijk het handigst.
+            </p>
+        
+            <ul>
+                <li>
+                    <label>
+                        <span>
+                            <svg role="presentation" viewBox="0 0 64 64">
+                                <use href="assets/iconen.svg#lijst"></use>
+                            </svg>
+                            <span>Lijst</span>
+                        </span>
+                        <input type="radio" name="verkenmode" value="lijst" checked>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span>
+                            <svg role="presentation" viewBox="0 0 64 64">
+                                <use href="assets/iconen.svg#kaart"></use>
+                            </svg>
+                            <span>Kaart</span>
+                        </span>
+                        <input type="radio" name="verkenmode" value="kaart">
+                    </label>
+                </li>
+            </ul>
         </form>
 
         <p>De verkennen-pagina moet nog opnieuw gemaakt worden.</p>
