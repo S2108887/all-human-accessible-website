@@ -63,6 +63,7 @@ a {
     @media (prefers-reduced-motion: no-preference) {
         transition: outline-color 0.3s;
     }
+    padding: 0.5rem;
 }
 
 a:focus, a:hover {
@@ -224,7 +225,6 @@ nav.hoofdnavigatie {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0.5rem;
 
         @media (prefers-color-scheme: light) {
             color: var(--tekstkleur);
